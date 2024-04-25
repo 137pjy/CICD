@@ -22,7 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
 
+
+
     steps:
+    - name: Debug
+      run: |
+        echo "Debugging..."
+        env
+        
     # (1) 기본 체크아웃
     - name: Checkout
       uses: actions/checkout@v3
